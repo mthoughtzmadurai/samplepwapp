@@ -12,9 +12,9 @@ script:
 deploy:
 - provider: elasticbeanstalk
   skip_cleanup: true
-  access_key_id: "$access_key_id"
+  access_key_id: "$ACCESSKEYID"
   secret_access_key:
-    secure: "$secret_access_key"
+    secure: "$SECRETACCESSKEY"
   region: ap-south-1
   app: "Sampleapp"
   env: "Sampleapp-env"
