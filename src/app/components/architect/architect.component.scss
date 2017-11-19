@@ -1,0 +1,24 @@
+@import "../../../styles/base/_variables";
+
+/deep/ {
+
+  .grid {
+    margin-left: -$gridSpacing;
+    margin-right: -$gridSpacing;
+  }
+
+  @media #{$gt-xs} {
+
+  }
+
+  @media #{$gt-sm} {
+
+  }
+
+  @media #{$gt-md} {
+
+  }
+
+}
+
+

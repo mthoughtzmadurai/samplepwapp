@@ -1,0 +1,29 @@
+@import "../../../styles/base/_variables";
+
+/deep/ {
+
+  .privacy-policy {
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    h2, h5 {
+      margin-top: 30px;
+    }
+  }
+
+  @media #{$gt-xs} {
+
+  }
+
+  @media #{$gt-sm} {
+
+  }
+
+  @media #{$gt-md} {
+
+  }
+
+}
+
+

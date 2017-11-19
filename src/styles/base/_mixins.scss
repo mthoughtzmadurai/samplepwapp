@@ -1,0 +1,62 @@
+// mixins styles
+@mixin absolute-vertical-center($height) {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: $height;
+}
+
+@mixin absolute-center() {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@mixin vertical-center-container() {
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+@mixin vertical-center-content() {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=($opacity*100))";
+}
+
+@mixin roboto-condensed-style() {
+  font-family: $RobotoCondensed;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.caption {
+  text-transform: uppercase;
+  color: $light-gray-color;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+@media #{$gt-xs} {
+
+}
+
+@media #{$gt-sm} {
+
+}
+
+@media #{$gt-md} {
+
+}
+

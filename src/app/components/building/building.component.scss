@@ -1,0 +1,27 @@
+@import "../../../styles/base/_variables";
+
+/deep/ {
+
+  .complete:before {
+    content: '\e5ca';
+    font-family: $MaterialIcons;
+    color: $success-green;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  @media #{$gt-xs} {
+
+  }
+
+  @media #{$gt-sm} {
+
+  }
+
+  @media #{$gt-md} {
+
+  }
+
+}
+
+

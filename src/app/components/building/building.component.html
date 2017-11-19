@@ -1,0 +1,32 @@
+<div class="content" *ngIf="buildings">
+  <h1>Buildings by {{buildings[0].architect.firstName}} {{buildings[0].architect.lastName}}</h1>
+
+  <p-dataTable [value]="buildings" [responsive]="true" sortField="dateBuilt" [sortOrder]="-1">
+
+    <p-column field="dateBuilt" header="Date Built" sortable="custom" (sortFunction)="customDateSort($event)">
+      <ng-template let-col let-date="rowData" pTemplate="body">
+        <span>{{date[col.field] | date: 'MM/dd/y'}}</span>
+      </ng-template>
+    </p-column>
+
+    <p-column field="name" header="Name" sortable="true"></p-column>
+
+    <p-column field="category" header="Category" sortable="custom" (sortFunction)="customCategorySort($event)">
+      <ng-template let-col let-category="rowData" pTemplate="body">
+        <span>{{category[col.field][0].name}}</span>
+      </ng-template>
+    </p-column>
+
+    <p-column field="location" header="Location"></p-column>
+
+    <p-column field="isCompleted" header="Completed" styleClass="centered">
+      <ng-template let-col let-completed="rowData" pTemplate="body">
+        <span *ngIf="completed[col.field]" class="complete"></span>
+        <span *ngIf="!completed[col.field]" class="incomplete"></span>
+      </ng-template>
+    </p-column>
+
+  </p-dataTable>
+</div>
+
+

@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+- 8.4.0
+branches:
+  only:
+  - master
+before_script:
+- npm install -g @angular/cli
+script:
+- NODE_ENV=test npm test
+- if [ "$TRAVIS_BRANCH" = "master" ]; then ng build --prod --aot --env=prod; fi
+- git add --force ./dist
+- git commit -m 'commiting for deploy to production'
+deploy:
+- provider: elasticbeanstalk
+  skip_cleanup: true
+  access_key_id: "$access_key_id"
+  secret_access_key:
+    secure: "$secret_access_key"
+  region: ap-south-1
+  app: testapp
+  env: Testapp-env
+  bucket_name: elasticbeanstalk-ap-south-1-573034299960

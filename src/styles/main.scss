@@ -1,0 +1,23 @@
+/*import base styles*/
+@import './base/_variables';
+@import './base/_fonts';
+@import './base/_layout';
+@import './base/_mixins';
+@import './base/_global';
+@import './base/_overwrites';
+
+@import '~@angular/material/theming';
+@import './base/_pwapp-theme';
+
+@include mat-core();
+
+// Define the default theme
+$pwapp-primary: mat-palette($mat-grey);
+$pwapp-accent:  mat-palette($mat-pwapp, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$pwapp-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$pwapp-theme: mat-light-theme($pwapp-primary, $pwapp-accent, $pwapp-warn);
+@include angular-material-theme($pwapp-theme);

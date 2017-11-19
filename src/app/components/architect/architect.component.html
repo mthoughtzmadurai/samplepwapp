@@ -1,0 +1,66 @@
+<div class="content">
+  <mat-tab-group>
+    <mat-tab label="Architects">
+      <div class="grid">
+        <div class="card-wrapper" *ngFor="let architect of architects">
+          <app-card [architect]="architect"></app-card>
+        </div>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="P+W APP Style Guide">
+      <div>
+        <section>
+          <h5>Simple Buttons</h5>
+          <button mat-button color="accent">Accent Button</button>
+          <button mat-button color="basic">Basic Button</button>
+          <button mat-button color="accent" disabled>Disabled Button</button>
+        </section>
+
+        <section>
+          <h5>Raised Buttons</h5>
+          <button mat-raised-button color="accent">Accent Button</button>
+          <button mat-raised-button color="basic">Basic Button</button>
+          <button mat-raised-button color="accent" disabled>Disabled Button</button>
+        </section>
+
+        <section>
+          <h5>Unordered List</h5>
+          <ul>
+            <li>This is a list item</li>
+            <li>Another list item</li>
+            <li>A longer list item</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu porta est. Proin consequat est id rhoncus molestie. Vestibulum consectetur nisl ac purus imperdiet ullamcorper. Suspendisse sollicitudin mauris ut aliquam scelerisque.</li>
+          </ul>
+        </section>
+
+        <h1>Header 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">This is the default link style</a>. Vestibulum eu porta est. Proin consequat est id rhoncus molestie. Vestibulum consectetur nisl ac purus imperdiet ullamcorper. Suspendisse sollicitudin mauris ut aliquam scelerisque.
+        </p>
+        <h2>Header 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu porta est. Proin consequat est id rhoncus molestie. Vestibulum consectetur nisl ac purus imperdiet ullamcorper. Suspendisse sollicitudin mauris ut aliquam scelerisque.
+        </p>
+        <h3>Header 3</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu porta est. Proin consequat est id rhoncus molestie. Vestibulum consectetur nisl ac purus imperdiet ullamcorper. Suspendisse sollicitudin mauris ut aliquam scelerisque.
+        </p>
+        <h4>Header 4</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu porta est. Proin consequat est id rhoncus molestie. Vestibulum consectetur nisl ac purus imperdiet ullamcorper. Suspendisse sollicitudin mauris ut aliquam scelerisque.
+        </p>
+        <h5>Header 5</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu porta est. Proin consequat est id rhoncus molestie. Vestibulum consectetur nisl ac purus imperdiet ullamcorper. Suspendisse sollicitudin mauris ut aliquam scelerisque.
+        </p>
+        <h6>Header 6</h6>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu porta est. Proin consequat est id rhoncus molestie. Vestibulum consectetur nisl ac purus imperdiet ullamcorper. Suspendisse sollicitudin mauris ut aliquam scelerisque.
+        </p>
+      </div>
+    </mat-tab>
+
+  </mat-tab-group>
+</div>
+

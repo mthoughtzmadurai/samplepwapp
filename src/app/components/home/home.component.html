@@ -1,0 +1,12 @@
+<div class="content">
+
+  <div *ngIf="givenName">
+    <h1>Welcome!</h1>
+    <button mat-raised-button color="accent" routerLink="/architects">View Architects</button>
+  </div>
+
+  <div *ngIf="!givenName">
+    <h1>Splash Page</h1>
+  </div>
+</div>
+

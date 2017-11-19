@@ -1,0 +1,70 @@
+@import "../../../../styles/base/_variables";
+
+/deep/ {
+  $numCols: 1;
+
+  .card-wrapper {
+    width: 100%/$numCols;
+    vertical-align: top;
+    padding: $gridSpacing;
+    border: 1px solid transparent;
+
+    .mat-card.architect {
+      border: none;
+      border-radius: 2px;
+      box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+      padding: 0;
+      height: 115px;
+
+      a {
+        display: block;
+        padding: 24px;
+      }
+
+      .mat-card-title {
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 300;
+        color: $dark-gray-color;
+      }
+
+      .mat-card-subtitle {
+        font-size: 13px;
+        line-height: 17px;
+        color: $light-gray-color;
+      }
+    }
+  }
+
+  @media #{$gt-xs} {
+    // define numCols here
+    $numCols: 2;
+
+    .card-wrapper {
+      width: 100%/$numCols;
+      display: inline-block;
+      float: left;
+    }
+  }
+
+  @media #{$gt-sm} {
+    // define numCols here
+    $numCols: 3;
+
+    .card-wrapper {
+      width: 100%/$numCols;
+    }
+  }
+
+  @media #{$gt-md} {
+    // define numCols here
+    $numCols: 4;
+
+    .card-wrapper {
+      width: 100%/$numCols;
+    }
+  }
+
+}
+
+

@@ -1,0 +1,50 @@
+// Media Query Ranges from Material Design
+$xs: 'screen and (max-width: 599px)';
+$sm: 'screen and (min-width: 600px) and (max-width: 959px)';
+$md: 'screen and (min-width: 960px) and (max-width: 1279px)';
+$lg: 'screen and (min-width: 1280px) and (max-width: 1919px)';
+$xl: 'screen and (min-width: 1920px) and (max-width: 5000px)';
+
+$lt-xs: 'screen and (max-width: 450px)';
+$lt-sm: 'screen and (max-width: 599px)';
+$lt-md: 'screen and (max-width: 959px)';
+$lt-lg: 'screen and (max-width: 1279px)';
+$lt-xl: 'screen and (max-width: 1919px)';
+
+$gt-xxs: 'screen and (min-width: 450px)';
+$gt-xs: 'screen and (min-width: 600px)';
+$gt-sm: 'screen and (min-width: 960px)';
+$gt-md: 'screen and (min-width: 1280px)';
+$gt-lg: 'screen and (min-width: 1920px)';
+
+// font variables
+$globalFontSize: 13px;
+$globalLineHeight: 20px;
+$OpenSans: 'Open Sans', 'Helvetica Neue', sans-serif;
+$Lato: 'Lato', 'Helvetica Neue', sans-serif;
+$Roboto: 'Roboto', 'Helvetica Neue', sans-serif;
+$RobotoCondensed: 'Roboto Condensed', 'Helvetica Neue', sans-serif;
+$MaterialIcons: 'Material Icons';
+
+// grid variables
+$gridSpacing: 10px;
+
+// general variables
+$white-color: #FFF;
+$black-color: #000;
+$gray-color: #999;
+$light-gray-color: rgba(0,0,0,0.38);
+$med-gray-color: rgba(0,0,0,0.54);
+$dark-gray-color: rgba(0,0,0,0.87);
+
+// color variables
+$pw-blue: #00B1DF;
+$pw-blue-darken-1: #00799C;
+$title-text: #424242;
+$muted-gray-text: #B0BEC5;
+$nav-bar-bg: #061C3F;
+$card-border: #B0BEC5;
+$med-line-gray: #D5D5D5;
+$line-gray: #E5E5E5;
+$success-green: #00B615;
+$error-red: #F44336;

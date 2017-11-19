@@ -1,0 +1,26 @@
+<div class="top-nav">
+  <div class="container" fxLayout="row" fxLayoutAlign="space-between center">
+    <div class="logo" fxFlex="45">
+      <a routerLink="/">P+W APP</a>
+    </div>
+
+    <div class="login" *ngIf="!givenName">
+      <button mat-raised-button color="accent" (click)="login()">Login</button>
+    </div>
+
+    <div class="nav-menu" fxFlex="45" *ngIf="givenName">
+      <button class="nav-menu-trigger" mat-button [matMenuTriggerFor]="navMenu">
+        <span class="employee-thumb">
+        <img src="../assets/images/employees/noPhoto.jpg" onError="this.style='display: none;'">
+          <!--<img src="https://s3.amazonaws.com/pw-static-assets-web/employee-images/{{userId}}.jpg" onError="this.style='display: none;'">-->
+      </span>
+        {{givenName}}
+      </button>
+      <mat-menu #navMenu="matMenu" [overlapTrigger]="false">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+        <button mat-menu-item class="logout" (click)="logout()">Logout</button>
+      </mat-menu>
+    </div>
+  </div>
+</div>
