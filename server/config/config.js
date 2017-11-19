@@ -13,7 +13,8 @@ const dbSettings = {
       min : 10,
       max : 300,
       idle: 30000,
-    }
+    },
+    operatorAliases: false
   }
 }
 
