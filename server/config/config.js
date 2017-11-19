@@ -1,7 +1,10 @@
+
+const Sequelize = require("sequelize");
 const dbSettings = {
   database    : "testdb",
   username    : "sa",
   password    : "p@ssW0rd",
+  operatorsAliases: Sequelize.Op,
   options: {
     host    : "127.0.0.1",
     port    : "1433",
@@ -13,8 +16,7 @@ const dbSettings = {
       min : 10,
       max : 300,
       idle: 30000,
-    },
-    operatorAliases: false
+    }
   }
 }
 
